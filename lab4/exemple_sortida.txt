@@ -1,0 +1,38 @@
+Reading Airport file from airports.txt
+There are 5740 airports with IATA code.
+Reading Routes file from routes.txt
+There are 68292 routes connecting 2 airports with IATA code.
+Number of sink nodes: 2455
+Computing PageRank...
+ ******************************************************************************* 
+ ********************** ( Page rank, Airport name) ***************************** 
+ ******************************************************************************* 
+Airports sorted by PageRank:
+(0.00623365941687696, Los Angeles Intl, United States)
+(0.006217664785171235, Chicago Ohare Intl, United States)
+(0.0059901982152139235, Denver Intl, United States)
+(0.005082758476049006, Heathrow, United Kingdom)
+(0.004909047060505447, Charles De Gaulle, France)
+(0.004848045158237737, Capital Intl, China)
+(0.004789370806795888, Frankfurt Main, Germany)
+(0.004701307838641265, Changi Intl, Singapore)
+(0.004691321778897441, Hartsfield Jackson Atlanta Intl, United States)
+(0.004430270823429283, John F Kennedy Intl, United States)
+(0.004394235429173007, Schiphol, Netherlands)
+(0.004143203656966816, Dallas Fort Worth Intl, United States)
+(0.004050007751498915, Sydney Intl, Australia)
+(0.003985637181041758, Incheon Intl, South Korea)
+(0.0039396430056851455, Lester B Pearson Intl, Canada)
+(0.003917011334971913, Dubai Intl, United Arab Emirates)
+(0.003867964189359588, Domododevo, Russia)
+(0.003825432526928836, Barcelona, Spain)
+(0.0038239907712485236, Pudong, China)
+(0.0036197279107165058, Hong Kong Intl, Hong Kong)
+(0.0036100112928479605, Ataturk, Turkey)
+(0.003408715534826621, Fiumicino, Italy)
+(0.0033345753895413196, Gatwick, United Kingdom)
+(0.00333334501401719, Franz Josef Strauss, Germany)
+(0.0033033205629440427, Suvarnabhumi Intl, Thailand)
+Sum of PageRank: 0.9999999999999324
+#Iterations: 69
+Time of computePageRanks(): 2.571762800216675
