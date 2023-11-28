@@ -83,74 +83,80 @@ def document_term_vector(client, index, id):
 
 
 def toTFIDF(client, index, file_id):
-    """
-    Returns the term weights of a document
-
-    :param client:
-    :param index:
-    :param file_id:
-    :return:
-    """
-
-    # Get document terms frequency and overall terms document frequency
+    # Obtenemos el vector de términos y el df (frecuencia de documentos) de los términos
     file_tf, file_df = document_term_vector(client, index, file_id)
 
-    # Get document maximum frequency
-    max_freq = max([f for _, f in file_tf])
-
-    # Get number of documents in index
+    # Calculamos el número de documentos en el índice
     dcount = doc_count(client, index)
 
-    tfidfw = []
-    for (t, w),(_, df) in zip(file_tf, file_df):
-        #
-        # Program something here
-        #
-        pass
+    # Calculamos el máximo valor de frecuencia en el documento
+    max_freq = max([f for _, f in file_tf])
 
-    return normalize(tfidfw)
+    # Inicializamos una lista para almacenar los pesos TF-IDF
+    tfidfw = []
+
+    for (t, w), (_, df) in zip(file_tf, file_df):
+        # Calculamos el TF-IDF para cada término
+        tf = w / max_freq  # TF (frecuencia de término)
+        idf = np.log(dcount / df)  # IDF (frecuencia inversa de documento)
+        tfidf = tf * idf  # TF-IDF
+
+        # Agregamos el término y su peso TF-IDF a la lista
+        tfidfw.append((t, tfidf))
+
+    # Normalizamos el vector de peso TF-IDF usando NumPy
+    tfidfw_array = np.array([w for _, w in tfidfw])
+    magnitude = np.linalg.norm(tfidfw_array)
+    normalized_tfidfw = [(t, w / magnitude) for t, w in tfidfw]
+
+    return normalized_tfidfw
 
 
 def normalize(tw):
-    """
-    Normalizes the weights in tw so that 
-    they form a unit-length vector.
-    It is assumed that not all weights are 0
-    
-    :param tw:
-    :return:
-    """
-    #
-    # Program something here
-    #
-    return None
+    # Extraemos los pesos del vector en un array NumPy
+    weights = np.array([w for _, w in tw])
+
+    # Calculamos la magnitud del vector utilizando NumPy
+    magnitude = np.linalg.norm(weights)
+
+    # Verificamos que la magnitud no sea cero para evitar divisiones por cero
+    if magnitude != 0:
+        # Normalizamos cada peso dividiéndolo por la magnitud utilizando NumPy
+        normalized_weights = weights / magnitude
+    else:
+        # Si la magnitud es cero (todos los pesos son cero), devolvemos el vector original
+        normalized_weights = weights
+
+    # Combinamos los términos con los pesos normalizados en una lista de tuplas
+    normalized = [(t, w) for t, w in zip([t for t, _ in tw], normalized_weights)]
+
+    return normalized
 
 
 def print_term_weight_vector(twv):
-    """
-    Prints the term vector and the corresponding weights
-    
-    :param twv:
-    :return:
-    """
-    #
-    # Program something here
-    #
-    pass
+    for term, weight in twv:
+        print(f"{term}: {weight}")
 
 
 def cosine_similarity(tw1, tw2):
-    """
-    Computes the cosine similarity between two weight vectors, terms are alphabetically ordered
-    
-    :param tw1:
-    :param tw2:
-    :return:
-    """
-    #
-    # Program something here
-    #
-    return 0
+
+    # Obtener los términos comunes entre tw1 y tw2
+    common_terms = set([t for t, _ in tw1]) & set([t for t, _ in tw2])
+
+    # Crear listas para almacenar los valores de los términos comunes en tw1 y tw2
+    values_tw1 = []
+    values_tw2 = []
+
+    # Obtener los valores de los términos comunes y guardarlos en las listas
+    for term in common_terms:
+        values_tw1.append([w for t, w in tw1 if t == term][0])  # Buscar el valor correspondiente en tw1
+        values_tw2.append([w for t, w in tw2 if t == term][0])  # Buscar el valor correspondiente en tw2
+
+    # Calcular el producto escalar entre los vectores normalizados
+    dot_product = np.dot(values_tw1, values_tw2)
+
+    return dot_product
+
 
 
 if __name__ == '__main__':
@@ -190,4 +196,3 @@ if __name__ == '__main__':
 
     except NotFoundError:
         print(f'Index {index} does not exist')
-
