@@ -17,21 +17,17 @@ class MRMarketBasket1(MRJob):
     
     def mapper(self, _, line):
         """
-        This is the mapper, it should generate pairs
-        of items
+        This is the mapper, it should generate pairs of items
         
         :param line: contains a transaction
         """
-        # Each line is a string a,b,c
-        trans = line.strip().split(',')
-        
-        #
-        # Compute map here
-        #
-        
+        # Each line is a string a,b,c     
         # Return pair key, value
-        yield None, None        
- 
+        trans = line.strip().split(',')
+        for i in range(len(trans)):
+            for j in range(len(trans)):
+                if i != j:
+                    yield (trans[i], trans[j]), 1
                     
     def reducer(self, key, values):
         """
@@ -40,11 +36,8 @@ class MRMarketBasket1(MRJob):
         
         Output should be at least a pair (key, new counting)
         """
-        #
         # Compute reducer here
-        #        
-        
-       yield None, None
+        yield key, sum(values)
         
 
     def steps(self):

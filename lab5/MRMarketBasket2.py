@@ -23,27 +23,22 @@ class MRMarketBasket2(MRJob):
         """
         # Each line is a string a,b,c
         trans = line.strip().split(',')
-
-        #
         # Compute map here
-        #
 
+        for item in trans:
+           yield item, 1
         # Return pair key, value
-        yield None, None          
+      
     
                     
     def reducer(self, key, values):
         """
-        Input is an item as key and all the countings
-        it has assigned
+        Input is an item as key and all the countings it has assigned
         
         Output should be at least a pair (key, new counting)
         """
-        #
         # Compute reducer here
-        #        
-
-        yield None, None
+        yield key, sum(values)
         
 
     def steps(self):
