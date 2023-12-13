@@ -66,8 +66,6 @@ if __name__ == '__main__':
 
     for support, conf in [(0.01,0.01), (0.01,0.25), (0.01,0.5), (0.01,0.75), (0.05,0.25), (0.07,0.25), (0.20,0.25), (0.5,0.25)]:
             nr = 0  # Inicializar el contador de reglas
-            #support = 0.15
-            #conf = 0.40
             for pair, pair_count in pairs.items():
                 item1, item2 = pair
                 if item1 in singles and item2 in singles:
@@ -75,10 +73,30 @@ if __name__ == '__main__':
                     confi = pair_count / singles[item1]
                     if sup >= support and confi >= conf:
                         nr += 1  # Contar la regla si cumple con el soporte y la confianza
-                #print("Count " + str(pair_count))
-                #print("PAREJA " + str(item1) +", " +str(item2))
-                #print("Support=", str(sup), "confidence=", str(confi))
+
             print("Support=", str(support), "confidence=", str(conf) + ".", "Rules found", nr, '\n')
-                    
-      
+
+
+    print("******************************************************************************* ")
+    print("************ Les normes del suport i la confiança triada ********************** ")
+    print("******************************************************************************* ",'\n')    
+    thresholds = [(0.01, 0.75), (0.05, 0.25), (0.07, 0.25)]  # Llindars específics a mostrar
+    n=3
+    for support, conf in thresholds:
+        nr = 0
+        n=n++1
+        print(f"Fila: ",n,f": Regles que compleixen el suport >= {support} i la confiança >= {conf}:")
+       
+        for (item1, item2), pair_count in pairs.items():
+            item1_count = singles.get(item1, 0)
+            sup_parella = pair_count / ntrans
+            conf_parella = pair_count / singles[item1]
+
+            if sup_parella >= support and conf_parella >= conf:
+                nr += 1
+                print(f"    Regla: {item1} → {item2}")
+                print(f"         El seu suport calculat: {sup_parella:.2f}")
+                print(f"         La seva confiança calculada: {conf_parella:.2f}")
+
+        print(f"Total de regles trobades: {nr}\n")                 
 
