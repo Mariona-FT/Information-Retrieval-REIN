@@ -38,7 +38,6 @@ if __name__ == '__main__':
         # Process the results of the script iterating the (key,value) pairs
         for key, value in mr_job1.parse_output(runner1.cat_output()):
             pairs[tuple(key)]=value
-            # You should store things here probably in a data structure
             
         
     mr_job2 = MRMarketBasket2(args=['-r', 'local', args.file,'--num-cores', str(args.ncores)])
@@ -49,7 +48,6 @@ if __name__ == '__main__':
         singles = {}
         for key, value in mr_job2.parse_output(runner2.cat_output()):
             singles[key]=value
-            # You should store things here probably in a data structure
             
     print(f'Time= {(time.time() - tinit)} seconds')
     
@@ -65,14 +63,14 @@ if __name__ == '__main__':
     print("******************************************************************************* ")    
 
     for support, conf in [(0.01,0.01), (0.01,0.25), (0.01,0.5), (0.01,0.75), (0.05,0.25), (0.07,0.25), (0.20,0.25), (0.5,0.25)]:
-            nr = 0  # Inicializar el contador de reglas
+            nr = 0  # Contador de reglas
             for pair, pair_count in pairs.items():
                 item1, item2 = pair
                 if item1 in singles and item2 in singles:
                     sup = pair_count / ntrans
                     confi = pair_count / singles[item1]
                     if sup >= support and confi >= conf:
-                        nr += 1  # Contar la regla si cumple con el soporte y la confianza
+                        nr += 1  # Contar la regla si compleix support i la confidence
 
             print("Support=", str(support), "confidence=", str(conf) + ".", "Rules found", nr, '\n')
 

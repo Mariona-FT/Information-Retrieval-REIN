@@ -21,13 +21,10 @@ class MRMarketBasket2(MRJob):
         
         :param line: contains a transaction
         """
-        # Each line is a string a,b,c
-        trans = line.strip().split(',')
-        # Compute map here
 
+        trans = line.strip().split(',')
         for item in trans:
            yield item, 1
-        # Return pair key, value
       
     
                     
@@ -37,7 +34,7 @@ class MRMarketBasket2(MRJob):
         
         Output should be at least a pair (key, new counting)
         """
-        # Compute reducer here
+
         yield key, sum(values)
         
 
