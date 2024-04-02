@@ -39,6 +39,15 @@ A l'Activitat 3, desenvolupem "Vogue Inspector", un rastrejador web destinat a l
 Codis importants del laboratori:
 - Carpeta del rastrejador: [vogue](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab3/vogue_lab3)
 
+
+### Laboratori 4:
+A l'Activitat 4, utilitzem fitxers de text per construir una xarxa d’aeroports i vols, sobre la qual calculen el [Page Rank](https://ca.wikipedia.org/wiki/PageRank), amb els fitxers [airports.txt](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab4/airports.txt) i [routes.txt](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab4/routes.txt), creem un graf on els nodes són els aeroports (utilitzant codis IATA) i les arestes són les rutes, amb pesos que representen el nombre de rutes entre cada parella d’aeroports. A continuació, apliquen l'algorisme de PageRank per determinar la importància relativa de cada aeroport dins de la xarxa. Els resultats es presenten en una llista ordenada decreixent segons el valor de PageRank de cada aeroport. Utilitzen el codi proporcionat [PageRank.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab4/PageRank.py) com a base per aquest càlcul.
+
+- Carpeta general: [lab4](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab4)
+  - Enunciat: [4REIN-lab](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab4/4REIN-lab.pdf)
+  
+Codis importants del laboratori:
+- Script càlcul PageRank: [PageRank.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab4/PageRank.py)
 ------------
 ### Projecte Final: Predicció de l'èxit o l'abandonament acadèmic dels estudiants
 Aquest projecte explica la predicció de l'èxit o l'abandonament acadèmic dels estudiants mitjançant l'anàlisi de dades i l'aplicació d'algoritmes predictius. Els materials proporcionats inclouen els informes, la presentació, els scripts de codi font i les dades utilitzades en el projecte.
