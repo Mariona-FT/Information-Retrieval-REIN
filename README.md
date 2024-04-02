@@ -28,6 +28,17 @@ A l'Activitat 2 de REIN, es configura l'ElasticSearch i modifiquen la tokenitzac
 Codis importants del laboratori:
   - Aplicació TF-IDF en documents: [TFIDFViewer.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab2/TFIDFViewer.py)
 
+
+### Laboratori 3:
+A l'Activitat 3, desenvolupem "Vogue Inspector", un rastrejador web destinat a la pàgina de Vogue Espanya. Aquest rastrejador extreu dades d'articles de moda, com ara títols, contingut i enllaços relacionats, per analitzar tendències actuals. L'extensió del rastrejador permet navegar a través de sub-pàgines per recopilar informació més detallada, la qual s'emmagatzema en un fitxer JSON. Aquestes dades s'integren després amb ElasticSearch per a realitzar consultes.
+
+- Carpeta general: [lab3](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab3)
+  - Enunciat: [3REIN-lab](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab3/3REIN-lab.pdf)
+  - Informe Final: [REIN_Activitat3](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab3/REIN_%20Activitat3.pdf)
+ 
+Codis importants del laboratori:
+- Carpeta del rastrejador: [vogue](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab3/vogue_lab3)
+
 ------------
 ### Projecte Final: Predicció de l'èxit o l'abandonament acadèmic dels estudiants
 Aquest projecte explica la predicció de l'èxit o l'abandonament acadèmic dels estudiants mitjançant l'anàlisi de dades i l'aplicació d'algoritmes predictius. Els materials proporcionats inclouen els informes, la presentació, els scripts de codi font i les dades utilitzades en el projecte.
