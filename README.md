@@ -16,6 +16,18 @@ L'Activitat 1 del laboratori implica la configuració d'ElasticSearch i la creac
 Codis importants del laboratori:
   - Aplicació llei heaps: [llei_heaps.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab1/llei_heaps.py)
   - Aplicació llei zipf: [llei_zipf.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab1/llei_zipf.py)
+
+
+### Laboratori 2:
+A l'Activitat 2 de REIN, es configura l'ElasticSearch i modifiquen la tokenització i els filtres per observar com aquests canvis afecten la indexació d'un corpus de textos. Experimentant amb diferents tokens i filtres per a analitzar les variacions en el recompte i tipus de paraules indexades. També es calcula la similitud cosinus entre documents usant vectors tf-idf per a determinar la semblança entre textos.
+
+- Carpeta general: [lab2](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab2)
+  - Enunciat: [2REIN-lab](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab2/2REIN-lab.pdf)
+  - Informe Final: [REIN_Activitat2](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab2/REIN_%20Activitat2.pdf)
+
+Codis importants del laboratori:
+  - Aplicació TF-IDF en documents: [TFIDFViewer.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab2/TFIDFViewer.py)
+
 ------------
 ### Projecte Final: Predicció de l'èxit o l'abandonament acadèmic dels estudiants
 Aquest projecte explica la predicció de l'èxit o l'abandonament acadèmic dels estudiants mitjançant l'anàlisi de dades i l'aplicació d'algoritmes predictius. Els materials proporcionats inclouen els informes, la presentació, els scripts de codi font i les dades utilitzades en el projecte.
