@@ -59,16 +59,9 @@ En l'Activitat 5 del laboratori de REIN, es realitzen experiments per determinar
 Codis importants del laboratori:
 - Script càlcul Anàlisi del Súper: [MRMarketBasketAnalysis.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab5/MRMarketBasketAnalysis.py)
 
-------------
-### Projecte Final: Predicció de l'èxit o l'abandonament acadèmic dels estudiants
-Aquest projecte explica la predicció de l'èxit o l'abandonament acadèmic dels estudiants mitjançant l'anàlisi de dades i l'aplicació d'algoritmes predictius. Els materials proporcionats inclouen els informes, la presentació, els scripts de codi font i les dades utilitzades en el projecte.
-- Carpeta general: [projecte_Prediccio_Exit_Academic](https://github.com/Mariona-FT/Data-Mining-MIDA/tree/main/projecte_Prediccio_Exit_Academic)
-- Informe Final: [Predicció de l'èxit o abandonament acadèmic dels estudiants](https://github.com/Mariona-FT/Data-Mining-MIDA/blob/main/projecte_Prediccio_Exit_Academic/Predicci%C3%B3%20l%E2%80%99%C3%A8xit%20abandonament%20acad%C3%A8mic%20estudiants.pdf)
-- Presentació Final: [Presentacio-Predicció de l'èxit o abandonament acadèmic dels estudiants](https://github.com/Mariona-FT/Data-Mining-MIDA/blob/main/projecte_Prediccio_Exit_Academic/Presentacio_Predicci%C3%B3%20de%20l%E2%80%99%C3%A8xit%20o%20abandonament%20acad%C3%A8mic%20dels%20estudiants_Mariona_Farr%C3%A9.pdf)
-- Scripts de l'activitat:
-  -  [prediccio_exit_academic.ipynb](https://github.com/Mariona-FT/Data-Mining-MIDA/blob/main/projecte_Prediccio_Exit_Academic/prediccio_exit_academic.ipynb) - Jupyter Notebook 
-  -  [prediccio_exit_academic.py](https://github.com/Mariona-FT/Data-Mining-MIDA/blob/main/projecte_Prediccio_Exit_Academic/prediccio_exit_academic.py) - Python
-- Dades: [predicció academic ](https://github.com/Mariona-FT/Data-Mining-MIDA/blob/main/projecte_Prediccio_Exit_Academic/data.csv)
+### Laboratori 6:
+A l'Activitat 6 del laboratori de REIN, haviem de fer una presentació relacionada amb el temari de l'assignatura, el tema triat és **l'estudi de la indexació en galeries de dispositius mòbils**. La presentació aborda com la proliferació de fotos digitals ha creat la necessitat d'una organització més eficient. S'explora la transició de la indexació tradicional a mètodes avançats com el reconeixement facial i l'ús de la intel·ligència artificial (IA) i l'aprenentatge automàtic per millorar la cerca i organització de fotos. També es discuteixen les implicacions de la privacitat i seguretat que comporta l'emmagatzematge de dades personals i com les noves tecnologies poden afectar aquests aspectes. Conclou destacant els beneficis d'aquests avanços alhora que manté la consciència de la importància de la protecció de dades.
 
-    Extretes de la web: [archive.ics](https://archive.ics.uci.edu/) sota el nom [Predict Students' Dropout and Academic Success ](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
+- Carpeta general: [lab6](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab6)
+  - Presentació: [La indexació a les galeries dels dispositius mòbils](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab6/REIN_Activitat6.pdf)
 
