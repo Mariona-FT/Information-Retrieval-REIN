@@ -48,6 +48,17 @@ A l'Activitat 4, utilitzem fitxers de text per construir una xarxa d’aeroports
   
 Codis importants del laboratori:
 - Script càlcul PageRank: [PageRank.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab4/PageRank.py)
+
+### Laboratori 5:
+En l'Activitat 5 del laboratori de REIN, es realitzen experiments per determinar l'impacte del nombre de nuclis de processament en l'eficiència de l'execució d'scripts de MapReduce. Utilitzen la biblioteca mrjob de Python per processar dades i analitzar la relació entre els nuclis utilitzats i el temps d'execució, observant que no necessàriament més nuclis resulten en una major eficiència. En aquesta activitat amb la implementació correcta del script [MRMarketBasketAnalysis.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab5/MRMarketBasketAnalysis.py) de la lectura de parelles de dades i el càlcul de suport i confiança per a regles d'associació, utilitzant el fitxer [groceries.csv](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab5/groceries.csv) . Com a resultat dels experiments, determinen que l'ús de 2 nuclis és el més òptim per a les seves proves.
+
+- Carpeta general: [lab5](https://github.com/Mariona-FT/Information-Retrieval-REIN/tree/main/lab5)
+  - Enunciat: [5REIN-lab](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab5/5REIN-lab.pdf)
+  - Informe Final: [REIN_Activitat5](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab5/REIN_Activitat5.pdf)
+  
+Codis importants del laboratori:
+- Script càlcul Anàlisi del Súper: [MRMarketBasketAnalysis.py](https://github.com/Mariona-FT/Information-Retrieval-REIN/blob/main/lab5/MRMarketBasketAnalysis.py)
+
 ------------
 ### Projecte Final: Predicció de l'èxit o l'abandonament acadèmic dels estudiants
 Aquest projecte explica la predicció de l'èxit o l'abandonament acadèmic dels estudiants mitjançant l'anàlisi de dades i l'aplicació d'algoritmes predictius. Els materials proporcionats inclouen els informes, la presentació, els scripts de codi font i les dades utilitzades en el projecte.
