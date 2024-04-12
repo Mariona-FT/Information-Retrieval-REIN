@@ -1,4 +1,4 @@
-# REIN
+# Information Retrieval: REIN
 EPSEVG RECUPERACIÓ DE LA INFORMACIÓ Curs 2023-24
 
 En aquest repositori, trobareu tots els fitxers necessaris utilitzats i creats per l'assignatura de Recuperació de la Informació al Curs 2023-24 a la Universitat UPC a EPSEVG.
