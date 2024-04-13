@@ -68,7 +68,7 @@ A l'Activitat 6 del laboratori de REIN, haviem de fer una presentació relaciona
 
 ## Autors
 
-Aquesta repositori ha estat creat per [Mariona Farré](https://github.com/Mariona-FT) i els laboratoris han estat creats amb la col·laboració de [Marc Pérez](https://github.com/marcperezg)
+Aquest repositori ha estat creat per [Mariona Farré](https://github.com/Mariona-FT) i els laboratoris han estat creats amb la col·laboració de [Marc Pérez](https://github.com/marcperezg)
 
 
 Gràcies per visitar aquest repositori :)
